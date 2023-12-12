@@ -1,0 +1,133 @@
+/******* Customized Bootstrap ********/
+
+$primary: #1842b6;
+$secondary: #26d48c;
+$tertiary: #f96251;
+$hightlight: #fec;
+$light: #f8f8f9;
+$dark: #000103;
+
+$font-family-base: "Inter", sans-serif;
+
+$headings-font-family: "Saira", sans-serif;
+
+$body-color: #787878;
+
+$headings-color: $dark;
+
+$headings-font-weight: 600;
+
+$display-font-weight: 700;
+
+$enable-responsive-font-sizes: true;
+
+$border-radius: 8px;
+
+$border-radius-sm: $border-radius;
+
+$border-radius-lg: $border-radius;
+
+$link-decoration: none;
+
+$enable-negative-margins: true;
+
+@import "bootstrap/scss/bootstrap";
+
+.header-navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-customStyles {
+  .carousel-slide {
+    img {
+      // filter: blur(2px);
+      filter: opacity(80%);
+    }
+  }
+
+  .carousel-content {
+    padding: 50px 0;
+    backdrop-filter: blur(3px);
+    // backdrop-filter: opacity(20%);
+
+    h1 {
+      color: $dark;
+      font-family: $headings-font-family;
+      font-weight: 700;
+      font-size: 74px;
+      line-height: 1;
+      // display: none;
+    }
+
+    .heading-text {
+      font-weight: 500;
+      font-family: $font-family-base;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      color: $hightlight;
+      // margin-bottom: 100px;
+    }
+  }
+
+  .btns-container {
+    margin-top: 50px !important;
+    a {
+      button {
+        padding: 12px 80px !important;
+      }
+    }
+  }
+}
+
+.services--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+  row-gap: 50px;
+
+  div {
+    align-self: stretch;
+    margin: 0;
+    background-color: $light;
+    flex-basis: 32%;
+  }
+}
+
+.project-item {
+  h4 {
+    margin-top: 30px;
+  }
+}
+
+.contact-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact--container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: 100%;
+  a {
+    text-wrap: wrap;
+  }
+}
+
+.move-top {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  .svg {
+    width: 50px;
+  }
+}

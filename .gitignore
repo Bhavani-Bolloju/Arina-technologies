@@ -1,0 +1,13 @@
+# Ignore system files
+.DS_Store
+
+# Ignore logs and databases
+*.log
+*.sqlite
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore compiled binaries
+*.exe
+*.dll
